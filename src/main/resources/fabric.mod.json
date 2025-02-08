@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "meteorplus",
+  "version": "${version}",
+  "name": "MeteorPlus",
+  "description": "An addon for Meteor client that adds many blatant features.",
+  "authors": [
+    "Olejka",
+		"Neki_play",
+		"Vazgen005"
+  ],
+  "contact": {
+		"homepage": "https://github.com/Nekiplay/MeteorPlus",
+		"issues": "https://github.com/Nekiplay/MeteorPlus/issues",
+		"sources": "https://github.com/Nekiplay/MeteorPlus",
+		"discord": "https://discord.gg/syHrs2ePyQ"
+  },
+
+	"license": "GNU AGPLv3",
+  "icon": "assets/plus/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+			"olejka.meteorplus.MeteorPlus"
+    ]
+  },
+  "mixins": [
+    "meteor-plus.mixins.json"
+  ],
+  "custom": {
+    "meteor-client:color": "0,181,73",
+		"github:sha": "${gh_hash}"
+  },
+  "depends": {
+    "java": ">=17",
+    "minecraft": ">=${mc_version}",
+    "meteor-client": "*"
+  }
+}
